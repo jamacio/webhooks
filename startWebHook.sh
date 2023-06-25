@@ -6,4 +6,4 @@ sudo apt install php-fpm -y
 
 host=$(curl -s ifconfig.me)
 
-php -S $host:8000
+nohup php -S $host:8000 >/dev/null 2>&1 &
