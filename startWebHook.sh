@@ -1,3 +1,4 @@
 #!/bin/bash
 sudo apt install php-fpm -y
-php -S localhost:8000
+host=$(hostname)
+php -S $host:8000
