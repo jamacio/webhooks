@@ -1,6 +1,5 @@
 <?php
-$file = $_GET['file'];
-shell_exec("chmod +x $file");
-$return = shell_exec($file);
-
-echo $return;
+$dir = $_GET['dir'];
+shell_exec("cd $file");
+echo shell_exec("git pull origin main");
+echo shell_exec("make build ");
